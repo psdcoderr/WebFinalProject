@@ -1,0 +1,47 @@
+### Get all products
+GET http://localhost:3000/users
+
+### Create a product
+
+POST http://localhost:4002/users
+Content-Type: application/json
+
+{
+    "email":"gvbj@gmail.com",
+    "password":"212442121",
+    "firstname":"Moiz",
+    "lastname":"uddin",
+    "phoneno":"03204905127"
+}
+
+GET http://localhost:4002/users
+
+### Get product by id
+
+GET http://localhost:4002/users
+
+### Delete product by id
+
+DELETE http://localhost:3000/users/65f4ab1c066439d3be12cc8d
+
+### Update product by id (Requires Middleware)
+
+PATCH http://localhost:3000/users/65f4ad2ab0c4293a3baa3d30
+Content-Type: application/json
+
+{
+    "name": "iphone 11 PRO MODEL",
+    "price": 799
+}
+
+
+
+###Error handeled.
+GET http://localhost:3000/
+
+###req.querry
+GET http://localhost:3000/test?name=iMac&price=3243
+
+
+###req.querry
+GET http://localhost:3000/test/4235323442/imac
